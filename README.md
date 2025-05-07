@@ -57,19 +57,13 @@ streamlit run stockDashboard.py
 ```
 This will open the dashboard in your default web browser.
 
+---
 
-## 📁 Folder Structure
+## 📽️ Demo
 
-```
-stock-dashboard/
-│
-├── stockDashboard.py        # Main Streamlit app file
-├── nasdaq-listed.csv        # CSV file containing NASDAQ tickers
-├── requirements.txt         # List of required Python packages
-├── .gitignore               # Git ignore file
-└── README.md                # Project documentation
+Here’s a quick look at **Stock dashboard** in action:
 
-```
+![StockDasboard Demo](assets/demo.gif)
 
 ---
 
