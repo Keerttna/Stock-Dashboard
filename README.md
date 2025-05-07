@@ -12,53 +12,63 @@ This app allows users to:
 
 ## 🚀 Features
 
-- 🔎 **Searchable Ticker Dropdown** (e.g. AAPL, MSFT, TSLA)
+- 🔎 **Searchable Ticker Dropdown**:  Allows users to select a stock symbol from the list of available NASDAQ tickers. (e.g. AAPL, MSFT, TSLA)
 - 📊 **Real-Time Market Summary** including:
   - Current Price
   - Daily Change (with %)
   - After-Hours Price
   - 52-Week High and Low
+  - Volatility Metrics
 - 📉 Color-coded price movements (green for gain, red for loss)
 - 🕒 Time-stamped data display
+- - **Financials & Actions**: Displays financial data and actions (e.g., dividends and stock splits).
 
----
+## Setup
 
-## 📦 Requirements
+### Prerequisites
+You need to have **Python 3.7+** installed. It is recommended to use a virtual environment to manage dependencies.
 
-Install the following dependencies:
+### Install Dependencies
+
+1. Clone the repository or download the project files.
+   
+   ```bash
+   git clone https://github.comKeerttna/stock-dashboard.git
+   cd stock-dashboard
+    ```
+2. Create a virtual environment and activate it (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
+
+3. Install the requirements:
 
 ```bash
-pip install streamlit yfinance pandas
+pip install -r requirements.txt
 ````
 
-```bash
-pip install numpy
-```
+## Running the Dashboard
+After installing the dependencies, you can run the Streamlit app:
 
----
-
-## 🧑‍💻 How to Run
-
-1. Clone this repository or copy the script.
-
-2. Run the Streamlit app:
-
-```bash
+``` bash
 streamlit run stockDashboard.py
 ```
+This will open the dashboard in your default web browser.
 
-3. Open the local URL in your browser (typically `http://localhost:8501`).
-
----
 
 ## 📁 Folder Structure
 
 ```
 stock-dashboard/
-├── stockDashboard.py     # Main Streamlit app
-├── nasdaq-listed.csv     # List of stock tickers for dropdown
-├── README.md             # Project documentation
-└── requirements.txt      # Package dependencies
+│
+├── stockDashboard.py        # Main Streamlit app file
+├── nasdaq-listed.csv        # CSV file containing NASDAQ tickers
+├── requirements.txt         # List of required Python packages
+├── .gitignore               # Git ignore file
+└── README.md                # Project documentation
+
 ```
 
 ---
